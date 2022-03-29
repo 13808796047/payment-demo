@@ -6,6 +6,7 @@ import com.example.paymentdemo.service.ProductService;
 import com.example.paymentdemo.vo.R;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,9 +23,10 @@ import java.util.List;
  * @author Summer
  * @since 2022-03-29
  */
+@CrossOrigin // 开放前端的跨域访问
 @Api(tags = "商品管理")
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/api/products")
 public class ProductController {
 
     @Resource
