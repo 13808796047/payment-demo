@@ -10,3 +10,8 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone:
       GMT+8
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///payment_demo?serverTimezone=GMT+8&characterEncoding=UTF-8
+    username: root
+    password:

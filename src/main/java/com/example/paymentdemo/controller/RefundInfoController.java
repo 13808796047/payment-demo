@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-03-29
  */
 @RestController
-@RequestMapping("/product")
-public class ProductController {
+@RequestMapping("/refund-info")
+public class RefundInfoController {
 
 }

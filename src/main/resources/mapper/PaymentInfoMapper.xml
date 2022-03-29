@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.paymentdemo.mapper.PaymentInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.paymentdemo.entity.PaymentInfo">
+        <result column="order_no" property="orderNo" />
+        <result column="transaction_id" property="transactionId" />
+        <result column="payment_type" property="paymentType" />
+        <result column="trade_type" property="tradeType" />
+        <result column="trade_state" property="tradeState" />
+        <result column="payer_total" property="payerTotal" />
+        <result column="content" property="content" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_no, transaction_id, payment_type, trade_type, trade_state, payer_total, content
+    </sql>
+
+</mapper>
