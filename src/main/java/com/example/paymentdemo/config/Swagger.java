@@ -28,7 +28,7 @@ public class Swagger {
     }
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("前台-API文档")
+                .title("微信支付案例文档")
                 .description("本文档描述了前台微服务接口定义")
                 .version("1.0")
                 .contact(new Contact("Summer", "http://summer.com",
